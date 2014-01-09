@@ -132,15 +132,15 @@ echo Please wait for a moment while we securely remove temporary configuration a
 
 # Securely remove our gpg.conf and restore backup
 
-#srm $HOME/.gnupg/gpg.conf
-#mv "$HOME/.gnupg/gpg.conf.bak" "$HOME/.gnupg/gpg.conf"
+srm $HOME/.gnupg/gpg.conf
+mv "$HOME/.gnupg/gpg.conf.bak" "$HOME/.gnupg/gpg.conf"
 
 # Securely remove the keyrings we just generated and restore backups
 
-#srm ${PWD}/pubring.gpg
-#srm ${PWD}/secring.gpg
-#mv "$HOME/.gnupg/pubring.gpg.bak" "$HOME/.gnupg/pubring.gpg"
-#mv "$HOME/.gnupg/secring.gpg.bak" "$HOME/.gnupg/secring.gpg"
+srm ${PWD}/pubring.gpg
+srm ${PWD}/secring.gpg
+mv "$HOME/.gnupg/pubring.gpg.bak" "$HOME/.gnupg/pubring.gpg"
+mv "$HOME/.gnupg/secring.gpg.bak" "$HOME/.gnupg/secring.gpg"
 
 # Securely remove GPGen configuration and userid.tmp
 
