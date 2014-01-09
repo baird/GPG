@@ -35,7 +35,7 @@ EMAIL="email@domain.com";
 GPG="gpg";
 GPGHOME="--homedir $HOME/.gnupg";
 
-export PATH="/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin"
+export PATH="/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/usr/local/share/bin:/usr/local/share/sbin"
 
 # Check for gnupg and install if not already
 
