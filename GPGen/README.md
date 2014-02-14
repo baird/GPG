@@ -5,7 +5,7 @@ GPGen
 
 Scripted 4096 bit GPG key and revocation certificate generator.
 
-The goal here is quickly generate exported keys and cert while leaving little trace. The script uses 3 custom variable (located at the top of the script) to define name, email and comment. Generates a single 4096 bit RSA key pair to ring. All configuration files and keyrings used are written to the same directory that gpgen is run from and then written over with 0s using secure-delete.
+The goal here is quickly generate exported keys and cert while leaving little trace. The script uses 3 custom variable (located at the top of the script) to define name, email and comment. Generates a single 4096 bit RSA key pair to ring. All configuration files and keyrings used are written to the same directory that gpgen is run from and then written over with 0s using secure-delete. Also creates a revocation certificate for generated keypairs.
 
 Developer Feature Wishlist
 ==============
